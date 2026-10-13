@@ -13,7 +13,7 @@ const Hero = () => {
           Счёт для бизнеса · Сбер · Т-Банк · Точка · Альфа
         </h1>
         <p className="absolute bottom-[78px] left-5 max-w-[260px] text-[16px] font-medium md:bottom-[18px] md:left-[52px] md:max-w-none md:text-[18px]">
-          Актуальные условия РКО. Оформление в один клик.
+          Актуальные условия РКО и регистрация бизнеса ИП/ООО. Оформление в один клик.
         </p>
         <a
           href="#banks"

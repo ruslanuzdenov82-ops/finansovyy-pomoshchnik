@@ -19,7 +19,7 @@ const Header = () => {
         <br />в финансах
       </a>
       <p className="hidden w-[330px] border-l-2 border-border pl-[26px] text-[18px] font-medium leading-[1.45] lg:block">
-        Все банки для бизнеса на одной странице. Сравни РКО и открой счёт за минуту.
+        Все банки для бизнеса на одной странице. Сравни РКО и регистрацию бизнеса ИП/ООО — открой счёт за минуту.
       </p>
       <nav className="ml-auto hidden gap-12 text-[18px] font-medium md:flex">
         {links.map((l) => (
