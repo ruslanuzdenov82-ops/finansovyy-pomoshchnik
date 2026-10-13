@@ -2,8 +2,9 @@ import { useState } from "react";
 import Icon from "@/components/ui/icon";
 
 const links = [
-  { href: "#banks", label: "Банки" },
-  { href: "#reviews", label: "Отзывы" },
+  { href: "/#banks", label: "Банки РКО" },
+  { href: "/registration", label: "Регистрация ИП/ООО" },
+  { href: "/#reviews", label: "Отзывы" },
 ];
 
 const Header = () => {
@@ -12,7 +13,7 @@ const Header = () => {
   return (
     <header className="relative z-20 flex items-start px-5 pt-6 md:px-[52px] md:pt-8">
       <a
-        href="#top"
+        href="/"
         className="w-auto font-body text-[24px] font-medium leading-[0.95] tracking-[-0.04em] md:w-[270px] md:text-[34px]"
       >
         Твой помощник
@@ -21,7 +22,7 @@ const Header = () => {
       <p className="hidden w-[330px] border-l-2 border-border pl-[26px] text-[18px] font-medium leading-[1.45] lg:block">
         Все банки для бизнеса на одной странице. Сравни РКО и регистрацию бизнеса ИП/ООО — открой счёт за минуту.
       </p>
-      <nav className="ml-auto hidden gap-12 text-[18px] font-medium md:flex">
+      <nav className="ml-auto hidden gap-8 lg:gap-12 text-[18px] font-medium md:flex">
         {links.map((l) => (
           <a key={l.href} href={l.href} className="story-link relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-foreground after:transition-all hover:after:w-full">
             {l.label}

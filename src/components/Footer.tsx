@@ -7,16 +7,17 @@ const Footer = () => {
             Счёт — за минуту
           </p>
           <a
-            href="#banks"
+            href="/#banks"
             className="mt-8 inline-block bg-primary px-[30px] py-4 text-[18px] font-medium text-primary-foreground transition-colors hover:bg-secondary"
           >
             Выбрать банк →
           </a>
         </div>
-        <nav className="flex gap-10 text-[18px] font-medium">
-          <a href="#top" className="hover:opacity-80">Наверх</a>
-          <a href="#banks" className="hover:opacity-80">Банки</a>
-          <a href="#reviews" className="hover:opacity-80">Отзывы</a>
+        <nav className="flex flex-wrap gap-x-10 gap-y-3 text-[18px] font-medium">
+          <a href="/#top" className="hover:opacity-80">Наверх</a>
+          <a href="/#banks" className="hover:opacity-80">Банки</a>
+          <a href="/#reviews" className="hover:opacity-80">Отзывы</a>
+          <a href="/registration" className="hover:opacity-80">Регистрация ИП/ООО</a>
         </nav>
       </div>
       <div className="mt-16 flex flex-col justify-between gap-2 border-t border-background/20 pt-6 text-[14px] md:flex-row">
