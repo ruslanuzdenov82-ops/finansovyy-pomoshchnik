@@ -106,6 +106,14 @@
 }
 
 @layer utilities {
+  .rocket-fly {
+    animation: rocket-fly 9s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rocket-fly {
+      display: none;
+    }
+  }
   .hero-run {
     animation: hero-run 18s linear infinite alternate;
   }
@@ -123,6 +131,17 @@
 @keyframes hero-run {
   to {
     transform: translateX(-640px);
+  }
+}
+@keyframes rocket-fly {
+  0% {
+    transform: translate(-160px, 180px);
+  }
+  70% {
+    transform: translate(calc(100vw + 40px), -220px);
+  }
+  100% {
+    transform: translate(calc(100vw + 40px), -220px);
   }
 }
 @keyframes marquee {

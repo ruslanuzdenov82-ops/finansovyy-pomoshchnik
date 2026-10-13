@@ -9,7 +9,21 @@ const Hero = () => {
       <Header />
 
       <div className="relative flex flex-col justify-center overflow-hidden">
-        <h1 className="hero-run text-primary ml-[-20px] whitespace-nowrap font-head text-[clamp(96px,16.25vw,208px)] font-black uppercase leading-[1.05] tracking-[-0.03em] md:ml-[-60px]">
+        <svg
+          className="rocket-fly pointer-events-none absolute left-0 top-1/2 z-0 h-[90px] w-[90px] text-foreground md:h-[130px] md:w-[130px]"
+          viewBox="0 0 100 100"
+          fill="currentColor"
+          aria-hidden
+        >
+          <g transform="rotate(45 50 50)">
+            <path d="M50 6 C62 18 66 34 66 52 L66 70 L34 70 L34 52 C34 34 38 18 50 6 Z" />
+            <path d="M34 54 L20 72 L20 82 L34 72 Z" />
+            <path d="M66 54 L80 72 L80 82 L66 72 Z" />
+            <circle cx="50" cy="38" r="7" fill="hsl(var(--background))" />
+            <path d="M40 74 L60 74 L56 86 L50 96 L44 86 Z" opacity="0.55" />
+          </g>
+        </svg>
+        <h1 className="hero-run relative z-10 text-primary ml-[-20px] whitespace-nowrap font-head text-[clamp(96px,16.25vw,208px)] font-black uppercase leading-[1.05] tracking-[-0.03em] md:ml-[-60px]">
           Счёт для бизнеса · Сбер · Т-Банк · Точка · Альфа
         </h1>
         <p className="absolute bottom-[78px] left-5 max-w-[260px] text-[16px] font-medium md:bottom-[18px] md:left-[52px] md:max-w-none md:text-[18px]">
