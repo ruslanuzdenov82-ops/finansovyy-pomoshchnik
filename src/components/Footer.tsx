@@ -20,6 +20,7 @@ const Footer = () => {
           <a href="/#banks" className="hover:opacity-80">Банки</a>
           <a href="/#reviews" className="hover:opacity-80">Отзывы</a>
           <a href="/registration" className="hover:opacity-80">Регистрация ИП/ООО</a>
+          <a href="/contacts" className="hover:opacity-80">Контакты</a>
         </nav>
       </div>
       <div className="mt-16 flex flex-col justify-between gap-2 border-t border-background/20 pt-6 text-[14px] md:flex-row">

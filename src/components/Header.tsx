@@ -5,6 +5,7 @@ const links = [
   { href: "/#banks", label: "Банки РКО" },
   { href: "/registration", label: "Регистрация ИП/ООО" },
   { href: "/#reviews", label: "Отзывы" },
+  { href: "/contacts", label: "Контакты" },
 ];
 
 const Header = () => {
@@ -19,10 +20,10 @@ const Header = () => {
         Твой помощник
         <br />в финансах
       </a>
-      <p className="hidden w-[280px] border-l-2 border-primary pl-5 text-[14px] font-normal italic leading-[1.5] text-muted-foreground xl:block">
+      <p className="hidden w-[280px] shrink-0 border-l-2 border-primary pl-5 text-[14px] font-normal italic leading-[1.5] text-muted-foreground min-[1360px]:block">
         Все банки для бизнеса на одной странице. Сравни РКО и регистрацию бизнеса ИП/ООО — открой счёт за минуту.
       </p>
-      <nav className="ml-auto hidden items-center gap-6 pl-10 font-head text-[15px] font-black uppercase tracking-[0.02em] md:flex lg:gap-10 xl:pl-16">
+      <nav className="ml-auto hidden items-center gap-6 whitespace-nowrap pl-10 font-head text-[15px] font-black uppercase tracking-[0.02em] md:flex lg:gap-10 xl:pl-16">
         {links.map((l) => (
           <a key={l.href} href={l.href} className="story-link relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:text-primary hover:after:w-full">
             {l.label}
