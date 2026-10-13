@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import Icon from "@/components/ui/icon";
 import BankCard from "@/components/BankCard";
+import Rocket from "@/components/Rocket";
 import { banks } from "@/data/banks";
 
 const filters = [
@@ -46,8 +47,9 @@ const Banks = () => {
         </div>
       </div>
 
-      <div className="px-5 py-16 md:px-[52px] md:py-24">
-        <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
+      <div className="relative overflow-hidden px-5 py-16 md:px-[52px] md:py-24">
+        <Rocket className="top-[110px] md:top-[200px]" />
+        <div className="relative z-10 grid gap-8 lg:grid-cols-[1fr_auto] lg:items-end">
           <h2 className="font-head text-[clamp(48px,8vw,120px)] font-black uppercase leading-[0.9] tracking-[-0.04em]">
             Выбери
             <br />
@@ -58,7 +60,7 @@ const Banks = () => {
           </p>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-y-2 border-border py-4 lg:flex-row lg:items-center">
+        <div className="relative z-10 mt-12 flex flex-col gap-4 bg-background border-y-2 border-border py-4 lg:flex-row lg:items-center">
           <div className="flex flex-wrap gap-2">
             {filters.map((f) => (
               <button
@@ -99,7 +101,7 @@ const Banks = () => {
         </div>
 
         {list.length > 0 ? (
-          <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="relative z-10 mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {list.map((b, i) => (
               <BankCard key={b.id + filter + sort} bank={b} index={i} />
             ))}
