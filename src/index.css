@@ -4,51 +4,44 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 21 100% 97%;
+    --foreground: 15 100% 51%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 21 100% 97%;
+    --card-foreground: 15 100% 51%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 21 100% 97%;
+    --popover-foreground: 15 100% 51%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 15 100% 51%;
+    --primary-foreground: 21 100% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 17 100% 64%;
+    --secondary-foreground: 21 100% 97%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 20 100% 93%;
+    --muted-foreground: 17 100% 64%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 15 100% 51%;
+    --accent-foreground: 21 100% 97%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2% 50%;
+    --destructive-foreground: 21 100% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 15 100% 51%;
+    --input: 15 100% 51%;
+    --ring: 15 100% 51%;
 
-    --radius: 0.5rem;
+    --radius: 0rem;
 
-    --sidebar-background: 0 0% 98%;
-
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 21 100% 97%;
+    --sidebar-foreground: 15 100% 51%;
+    --sidebar-primary: 15 100% 51%;
+    --sidebar-primary-foreground: 21 100% 97%;
+    --sidebar-accent: 20 100% 93%;
+    --sidebar-accent-foreground: 15 100% 51%;
+    --sidebar-border: 15 100% 51%;
+    --sidebar-ring: 15 100% 51%;
   }
 
   .dark {
@@ -98,4 +91,34 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Golos Text', sans-serif;
+    font-weight: 500;
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  .hero-run {
+    animation: hero-run 18s linear infinite alternate;
+  }
+  .marquee {
+    animation: marquee 40s linear infinite;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .hero-run, .marquee { animation: none; }
+  }
+}
+
+@keyframes hero-run {
+  to { transform: translateX(-640px); }
+}
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
