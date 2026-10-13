@@ -18,7 +18,7 @@ const Header = () => {
         Твой помощник
         <br />в финансах
       </a>
-      <p className="hidden w-[330px] border-l-2 border-foreground pl-[26px] text-[18px] font-medium leading-[1.45] lg:block">
+      <p className="hidden w-[330px] border-l-2 border-border pl-[26px] text-[18px] font-medium leading-[1.45] lg:block">
         Все банки для бизнеса на одной странице. Сравни РКО и открой счёт за минуту.
       </p>
       <nav className="ml-auto hidden gap-12 text-[18px] font-medium md:flex">
@@ -31,18 +31,18 @@ const Header = () => {
       <button
         aria-label="Меню"
         onClick={() => setOpen((v) => !v)}
-        className="ml-auto flex h-11 w-11 items-center justify-center border-2 border-foreground md:hidden"
+        className="ml-auto flex h-11 w-11 items-center justify-center border-2 border-border md:hidden"
       >
         <Icon name={open ? "X" : "Menu"} size={22} />
       </button>
       {open && (
-        <div className="absolute left-0 right-0 top-full mt-3 animate-fade-in border-y-2 border-foreground bg-background md:hidden">
+        <div className="absolute left-0 right-0 top-full mt-3 animate-fade-in border-y-2 border-border bg-background md:hidden">
           {links.map((l) => (
             <a
               key={l.href}
               href={l.href}
               onClick={() => setOpen(false)}
-              className="block border-b-2 border-foreground px-5 py-4 font-head text-2xl font-black uppercase last:border-b-0"
+              className="block border-b-2 border-border px-5 py-4 font-head text-2xl font-black uppercase last:border-b-0"
             >
               {l.label}
             </a>

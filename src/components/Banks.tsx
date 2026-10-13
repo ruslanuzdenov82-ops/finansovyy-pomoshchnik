@@ -31,8 +31,8 @@ const Banks = () => {
   }, [filter, sort, query]);
 
   return (
-    <section id="banks" className="scroll-mt-4 border-t-2 border-foreground">
-      <div className="overflow-hidden border-b-2 border-foreground bg-primary py-3 text-primary-foreground">
+    <section id="banks" className="scroll-mt-4 border-t-2 border-border">
+      <div className="overflow-hidden bg-foreground py-3 text-background">
         <div className="marquee flex w-max whitespace-nowrap font-head text-[22px] font-black uppercase tracking-[-0.01em]">
           {Array.from({ length: 2 }).map((_, k) => (
             <span key={k} className="flex">
@@ -53,18 +53,18 @@ const Banks = () => {
             <br />
             свой банк
           </h2>
-          <p className="max-w-[420px] border-l-2 border-foreground pl-6 text-[18px] leading-[1.45]">
+          <p className="max-w-[420px] border-l-2 border-border pl-6 text-[18px] leading-[1.45]">
             Все карточки РКО в одном месте. Сравни стоимость, бесплатный период и комиссии — и оформи счёт там, где выгоднее именно тебе.
           </p>
         </div>
 
-        <div className="mt-12 flex flex-col gap-4 border-y-2 border-foreground py-4 lg:flex-row lg:items-center">
+        <div className="mt-12 flex flex-col gap-4 border-y-2 border-border py-4 lg:flex-row lg:items-center">
           <div className="flex flex-wrap gap-2">
             {filters.map((f) => (
               <button
                 key={f.id}
                 onClick={() => setFilter(f.id)}
-                className={`border-2 border-foreground px-4 py-2 text-[15px] font-medium transition-colors ${
+                className={`border-2 border-border px-4 py-2 text-[15px] font-medium transition-colors ${
                   filter === f.id ? "bg-primary text-primary-foreground" : "hover:bg-muted"
                 }`}
               >
@@ -73,7 +73,7 @@ const Banks = () => {
             ))}
           </div>
           <div className="flex flex-1 flex-col gap-2 sm:flex-row lg:justify-end">
-            <label className="flex items-center gap-2 border-2 border-foreground px-3">
+            <label className="flex items-center gap-2 border-2 border-border px-3">
               <Icon name="Search" size={18} />
               <input
                 value={query}
@@ -87,7 +87,7 @@ const Banks = () => {
                 <button
                   key={s.id}
                   onClick={() => setSort(s.id)}
-                  className={`border-2 border-foreground px-4 py-2 text-[15px] font-medium transition-colors [&+&]:-ml-[2px] ${
+                  className={`border-2 border-border px-4 py-2 text-[15px] font-medium transition-colors [&+&]:-ml-[2px] ${
                     sort === s.id ? "bg-primary text-primary-foreground" : "hover:bg-muted"
                   }`}
                 >
@@ -105,7 +105,7 @@ const Banks = () => {
             ))}
           </div>
         ) : (
-          <div className="mt-10 border-2 border-dashed border-foreground p-12 text-center">
+          <div className="mt-10 border-2 border-dashed border-border p-12 text-center">
             <p className="font-head text-[28px] font-black uppercase">Ничего не нашли</p>
             <button
               onClick={() => {

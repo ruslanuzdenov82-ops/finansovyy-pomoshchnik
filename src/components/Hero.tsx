@@ -9,7 +9,7 @@ const Hero = () => {
       <Header />
 
       <div className="relative flex flex-col justify-center overflow-hidden">
-        <h1 className="hero-run ml-[-20px] whitespace-nowrap font-head text-[clamp(96px,16.25vw,208px)] font-black uppercase leading-[1.05] tracking-[-0.03em] md:ml-[-60px]">
+        <h1 className="hero-run text-primary ml-[-20px] whitespace-nowrap font-head text-[clamp(96px,16.25vw,208px)] font-black uppercase leading-[1.05] tracking-[-0.03em] md:ml-[-60px]">
           Счёт для бизнеса · Сбер · Т-Банк · Точка · Альфа
         </h1>
         <p className="absolute bottom-[78px] left-5 max-w-[260px] text-[16px] font-medium md:bottom-[18px] md:left-[52px] md:max-w-none md:text-[18px]">
@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
 
       <svg
-        className="block h-[140px] w-full text-foreground md:h-[210px]"
+        className="block h-[140px] w-full text-primary/80 md:h-[210px]"
         viewBox="50 0 1170 210"
         preserveAspectRatio="none"
         fill="none"

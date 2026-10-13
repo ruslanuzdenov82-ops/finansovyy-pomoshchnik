@@ -25,7 +25,7 @@ const Reviews = () => {
   }, [i]);
 
   return (
-    <section id="reviews" className="scroll-mt-4 border-t-2 border-foreground px-5 py-16 md:px-[52px] md:py-24">
+    <section id="reviews" className="scroll-mt-4 border-t-2 border-border px-5 py-16 md:px-[52px] md:py-24">
       <div className="flex flex-wrap items-end justify-between gap-6">
         <h2 className="font-head text-[clamp(48px,8vw,120px)] font-black uppercase leading-[0.9] tracking-[-0.04em]">
           Что
@@ -40,14 +40,14 @@ const Reviews = () => {
             <button
               onClick={() => go(-1)}
               aria-label="Предыдущий отзыв"
-              className="flex h-14 w-14 items-center justify-center border-2 border-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="flex h-14 w-14 items-center justify-center border-2 border-border transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               <Icon name="ArrowLeft" size={22} />
             </button>
             <button
               onClick={() => go(1)}
               aria-label="Следующий отзыв"
-              className="-ml-[2px] flex h-14 w-14 items-center justify-center border-2 border-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+              className="-ml-[2px] flex h-14 w-14 items-center justify-center border-2 border-border transition-colors hover:bg-primary hover:text-primary-foreground"
             >
               <Icon name="ArrowRight" size={22} />
             </button>
@@ -56,7 +56,7 @@ const Reviews = () => {
       </div>
 
       <div
-        className="mt-12 grid border-2 border-foreground lg:grid-cols-[1.6fr_1fr]"
+        className="mt-12 grid border-2 border-border lg:grid-cols-[1.6fr_1fr]"
         onMouseEnter={() => setPaused(true)}
         onMouseLeave={() => setPaused(false)}
       >
@@ -92,13 +92,13 @@ const Reviews = () => {
 
         <ul
           ref={listRef}
-          className="relative max-h-[260px] overflow-y-auto border-t-2 border-foreground lg:max-h-[520px] lg:border-l-2 lg:border-t-0"
+          className="relative max-h-[260px] overflow-y-auto border-t-2 border-border lg:max-h-[520px] lg:border-l-2 lg:border-t-0"
         >
           {reviews.map((rv, k) => (
             <li key={k}>
               <button
                 onClick={() => setI(k)}
-                className={`flex w-full items-center justify-between gap-4 border-b-2 border-foreground px-6 py-4 text-left transition-colors ${
+                className={`flex w-full items-center justify-between gap-4 border-b-2 border-border px-6 py-4 text-left transition-colors ${
                   k === i ? "bg-primary text-primary-foreground" : "hover:bg-muted"
                 }`}
               >

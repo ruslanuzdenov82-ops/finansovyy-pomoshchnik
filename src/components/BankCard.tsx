@@ -5,7 +5,7 @@ import type { Bank } from "@/data/banks";
 type Props = { bank: Bank; index: number };
 
 const Row = ({ label, value }: { label: string; value: string }) => (
-  <div className="flex items-baseline justify-between gap-4 border-t-2 border-foreground py-3">
+  <div className="flex items-baseline justify-between gap-4 border-t-2 border-border py-3">
     <dt className="text-[14px] text-muted-foreground">{label}</dt>
     <dd className="text-right text-[15px] font-medium">{value}</dd>
   </div>
@@ -16,7 +16,7 @@ const BankCard = ({ bank, index }: Props) => {
 
   return (
     <article
-      className="group flex animate-fade-in flex-col border-2 border-foreground bg-background p-6 transition-colors hover:bg-muted"
+      className="group flex animate-fade-in flex-col border-2 border-border bg-card p-6 transition-colors hover:bg-muted"
       style={{ animationDelay: `${(index % 6) * 60}ms` }}
     >
       <div className="flex items-start justify-between gap-4">
@@ -32,7 +32,7 @@ const BankCard = ({ bank, index }: Props) => {
           </div>
         </div>
         {bank.tag && (
-          <span className="shrink-0 border-2 border-foreground px-2 py-1 text-[12px] font-medium uppercase">
+          <span className="shrink-0 border-2 border-border px-2 py-1 text-[12px] font-medium uppercase">
             {bank.tag}
           </span>
         )}
@@ -52,7 +52,7 @@ const BankCard = ({ bank, index }: Props) => {
       </dl>
 
       {open && (
-        <ul className="animate-fade-in border-t-2 border-foreground pt-3">
+        <ul className="animate-fade-in border-t-2 border-border pt-3">
           {bank.details.map((d) => (
             <li key={d} className="flex items-center gap-2 py-1 text-[15px]">
               <Icon name="Check" size={16} />
@@ -67,7 +67,7 @@ const BankCard = ({ bank, index }: Props) => {
           type="button"
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
-          className="flex h-[52px] w-[52px] items-center justify-center border-2 border-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+          className="flex h-[52px] w-[52px] items-center justify-center border-2 border-border transition-colors hover:bg-primary hover:text-primary-foreground"
           aria-label="Подробнее"
         >
           <Icon name={open ? "Minus" : "Plus"} size={20} />

@@ -4,32 +4,32 @@
 
 @layer base {
   :root {
-    --background: 21 100% 97%;
-    --foreground: 15 100% 51%;
+    --background: 30 33% 97%;
+    --foreground: 20 14% 12%;
 
-    --card: 21 100% 97%;
-    --card-foreground: 15 100% 51%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 12%;
 
-    --popover: 21 100% 97%;
-    --popover-foreground: 15 100% 51%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 12%;
 
     --primary: 15 100% 51%;
-    --primary-foreground: 21 100% 97%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 17 100% 64%;
-    --secondary-foreground: 21 100% 97%;
+    --secondary: 17 100% 44%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 20 100% 93%;
-    --muted-foreground: 17 100% 64%;
+    --muted: 25 60% 93%;
+    --muted-foreground: 20 8% 42%;
 
     --accent: 15 100% 51%;
-    --accent-foreground: 21 100% 97%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 50%;
-    --destructive-foreground: 21 100% 97%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 15 100% 51%;
-    --input: 15 100% 51%;
+    --border: 25 20% 84%;
+    --input: 25 20% 84%;
     --ring: 15 100% 51%;
 
     --radius: 0rem;
@@ -97,9 +97,11 @@
     scroll-behavior: smooth;
   }
   body {
-    font-family: 'Golos Text', sans-serif;
+    font-family: "Golos Text", sans-serif;
     font-weight: 500;
     overflow-x: hidden;
+    background-image: radial-gradient(hsl(25 25% 80%) 1px, transparent 1px);
+    background-size: 22px 22px;
   }
 }
 
@@ -111,14 +113,23 @@
     animation: marquee 40s linear infinite;
   }
   @media (prefers-reduced-motion: reduce) {
-    .hero-run, .marquee { animation: none; }
+    .hero-run,
+    .marquee {
+      animation: none;
+    }
   }
 }
 
 @keyframes hero-run {
-  to { transform: translateX(-640px); }
+  to {
+    transform: translateX(-640px);
+  }
 }
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
