@@ -21,8 +21,13 @@ const BankCard = ({ bank, index }: Props) => {
     >
       <div className="flex items-start justify-between gap-4">
         <div className="flex items-center gap-4">
-          <div className="flex h-14 w-14 shrink-0 items-center justify-center bg-primary font-head text-[20px] font-black text-primary-foreground">
-            {bank.short}
+          <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-white">
+            <img
+              src={`/logos/${bank.id}.png`}
+              alt={bank.name}
+              loading="lazy"
+              className="h-full w-full object-contain"
+            />
           </div>
           <div>
             <h3 className="font-head text-[24px] font-black uppercase leading-none tracking-[-0.02em]">
