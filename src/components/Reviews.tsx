@@ -1,49 +1,28 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Icon from "@/components/ui/icon";
+import { reviews } from "@/data/reviews";
 
-const reviews = [
-  {
-    name: "Андрей",
-    role: "ИП, автосервис, Казань",
-    text: "Увидел сайт, удобно выстроены все банки, выбрал подходящий и оформил. Минут десять от силы.",
-    bank: "Точка",
-  },
-  {
-    name: "Марина",
-    role: "Кондитерская на заказ",
-    text: "Открывала ИП и вообще не понимала, куда идти. Тут сразу видно, где сколько стоит обслуживание и что с наличкой. Взяла с нулевым тарифом, пока хватает.",
-    bank: "Сбербанк",
-  },
-  {
-    name: "Денис К.",
-    role: "ООО, грузоперевозки",
-    text: "Раньше сидел с пятью вкладками и табличкой в экселе. Здесь всё на одной странице, честно сэкономил вечер.",
-    bank: "Альфа-Банк",
-  },
-  {
-    name: "Ольга",
-    role: "Фотограф, самозанятая → ИП",
-    text: "Понравилось, что без лишнего. Посмотрела комиссии за платежи, у меня их много — выбрала где без комиссии.",
-    bank: "Т-Банк",
-  },
-  {
-    name: "Тимур",
-    role: "Интернет-магазин",
-    text: "Друг скинул ссылку. Отфильтровал по 0 рублей в месяц, сравнил три карточки и оформил. Всё.",
-    bank: "Модульбанк",
-  },
-  {
-    name: "Светлана Игоревна",
-    role: "Бухгалтер на аутсорсе",
-    text: "Теперь кидаю эту страницу всем новым клиентам, когда спрашивают, где открыть счёт. Удобно, что условия свежие.",
-    bank: "ВТБ",
-  },
-];
+const INTERVAL = 6000;
 
 const Reviews = () => {
   const [i, setI] = useState(0);
+  const [paused, setPaused] = useState(false);
+  const listRef = useRef<HTMLUListElement>(null);
   const r = reviews[i];
   const go = (d: number) => setI((v) => (v + d + reviews.length) % reviews.length);
+
+  useEffect(() => {
+    if (paused) return;
+    const t = setTimeout(() => go(1), INTERVAL);
+    return () => clearTimeout(t);
+  }, [i, paused]);
+
+  useEffect(() => {
+    const list = listRef.current;
+    const item = list?.children[i] as HTMLElement | undefined;
+    if (!list || !item) return;
+    list.scrollTo({ top: item.offsetTop - list.clientHeight / 2 + item.clientHeight / 2, behavior: "smooth" });
+  }, [i]);
 
   return (
     <section id="reviews" className="scroll-mt-4 border-t-2 border-foreground px-5 py-16 md:px-[52px] md:py-24">
@@ -53,49 +32,73 @@ const Reviews = () => {
           <br />
           говорят
         </h2>
-        <div className="flex">
-          <button
-            onClick={() => go(-1)}
-            aria-label="Предыдущий отзыв"
-            className="flex h-14 w-14 items-center justify-center border-2 border-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
-          >
-            <Icon name="ArrowLeft" size={22} />
-          </button>
-          <button
-            onClick={() => go(1)}
-            aria-label="Следующий отзыв"
-            className="-ml-[2px] flex h-14 w-14 items-center justify-center border-2 border-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
-          >
-            <Icon name="ArrowRight" size={22} />
-          </button>
+        <div className="flex items-center gap-4">
+          <span className="font-head text-[20px] font-black">
+            {String(i + 1).padStart(2, "0")} / {reviews.length}
+          </span>
+          <div className="flex">
+            <button
+              onClick={() => go(-1)}
+              aria-label="Предыдущий отзыв"
+              className="flex h-14 w-14 items-center justify-center border-2 border-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              <Icon name="ArrowLeft" size={22} />
+            </button>
+            <button
+              onClick={() => go(1)}
+              aria-label="Следующий отзыв"
+              className="-ml-[2px] flex h-14 w-14 items-center justify-center border-2 border-foreground transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              <Icon name="ArrowRight" size={22} />
+            </button>
+          </div>
         </div>
       </div>
 
-      <div className="mt-12 grid border-2 border-foreground lg:grid-cols-[1.6fr_1fr]">
-        <figure key={i} className="animate-fade-in p-6 md:p-12">
-          <span className="font-head text-[96px] font-black leading-[0.6]">“</span>
-          <blockquote className="mt-4 text-[clamp(22px,2.6vw,34px)] font-medium leading-[1.3] tracking-[-0.01em]">
-            {r.text}
-          </blockquote>
-          <figcaption className="mt-8 flex items-center gap-4">
-            <div className="flex h-14 w-14 items-center justify-center bg-primary font-head text-[22px] font-black text-primary-foreground">
-              {r.name[0]}
-            </div>
-            <div>
-              <p className="text-[18px] font-medium">{r.name}</p>
-              <p className="text-[14px] text-muted-foreground">
-                {r.role} · открыл(а) счёт в «{r.bank}»
-              </p>
-            </div>
-          </figcaption>
-        </figure>
+      <div
+        className="mt-12 grid border-2 border-foreground lg:grid-cols-[1.6fr_1fr]"
+        onMouseEnter={() => setPaused(true)}
+        onMouseLeave={() => setPaused(false)}
+      >
+        <div className="flex flex-col">
+          <div className="h-[4px] w-full bg-muted">
+            <div
+              key={`${i}-${paused}`}
+              className="h-full bg-primary"
+              style={{
+                animation: paused ? "none" : `review-progress ${INTERVAL}ms linear forwards`,
+                width: paused ? "0%" : undefined,
+              }}
+            />
+          </div>
+          <figure key={i} className="animate-fade-in flex-1 p-6 md:p-12">
+            <span className="font-head text-[96px] font-black leading-[0.6]">“</span>
+            <blockquote className="mt-4 text-[clamp(22px,2.6vw,34px)] font-medium leading-[1.3] tracking-[-0.01em]">
+              {r.text}
+            </blockquote>
+            <figcaption className="mt-8 flex items-center gap-4">
+              <div className="flex h-14 w-14 shrink-0 items-center justify-center bg-primary font-head text-[22px] font-black text-primary-foreground">
+                {r.name[0]}
+              </div>
+              <div>
+                <p className="text-[18px] font-medium">{r.name}</p>
+                <p className="text-[14px] text-muted-foreground">
+                  {r.role} · открыл(а) счёт в «{r.bank}»
+                </p>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
 
-        <ul className="border-t-2 border-foreground lg:border-l-2 lg:border-t-0">
+        <ul
+          ref={listRef}
+          className="relative max-h-[260px] overflow-y-auto border-t-2 border-foreground lg:max-h-[520px] lg:border-l-2 lg:border-t-0"
+        >
           {reviews.map((rv, k) => (
-            <li key={rv.name}>
+            <li key={k}>
               <button
                 onClick={() => setI(k)}
-                className={`flex w-full items-center justify-between gap-4 border-b-2 border-foreground px-6 py-4 text-left transition-colors last:border-b-0 ${
+                className={`flex w-full items-center justify-between gap-4 border-b-2 border-foreground px-6 py-4 text-left transition-colors ${
                   k === i ? "bg-primary text-primary-foreground" : "hover:bg-muted"
                 }`}
               >
@@ -105,12 +108,14 @@ const Reviews = () => {
                     {rv.role}
                   </span>
                 </span>
-                <span className="font-head text-[18px] font-black">0{k + 1}</span>
+                <span className="font-head text-[18px] font-black">{String(k + 1).padStart(2, "0")}</span>
               </button>
             </li>
           ))}
         </ul>
       </div>
+
+      <style>{`@keyframes review-progress { from { width: 0% } to { width: 100% } }`}</style>
     </section>
   );
 };
