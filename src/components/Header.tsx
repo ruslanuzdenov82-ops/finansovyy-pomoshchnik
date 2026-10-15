@@ -4,6 +4,7 @@ import Icon from "@/components/ui/icon";
 const links = [
   { href: "/#banks", label: "Банки РКО" },
   { href: "/registration", label: "Регистрация ИП/ООО" },
+  { href: "/mfo", label: "МФО" },
   { href: "/#reviews", label: "Отзывы" },
   { href: "/contacts", label: "Контакты" },
 ];
