@@ -20,6 +20,7 @@ const Footer = () => {
           <a href="/#banks" className="hover:opacity-80">Банки</a>
           <a href="/#reviews" className="hover:opacity-80">Отзывы</a>
           <a href="/registration" className="hover:opacity-80">Регистрация ИП/ООО</a>
+          <a href="/debit" className="hover:opacity-80">Дебетовые карты</a>
           <a href="/mfo" className="hover:opacity-80">МФО</a>
           <a href="/contacts" className="hover:opacity-80">Контакты</a>
         </nav>

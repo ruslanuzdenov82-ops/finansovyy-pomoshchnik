@@ -4,6 +4,7 @@ import Icon from "@/components/ui/icon";
 const links = [
   { href: "/#banks", label: "Банки РКО" },
   { href: "/registration", label: "Регистрация ИП/ООО" },
+  { href: "/debit", label: "Дебетовые карты" },
   { href: "/mfo", label: "МФО" },
   { href: "/#reviews", label: "Отзывы" },
   { href: "/contacts", label: "Контакты" },
@@ -16,15 +17,15 @@ const Header = () => {
     <header className="relative z-20 flex items-start px-5 pt-6 md:px-[52px] md:pt-8">
       <a
         href="/"
-        className="w-auto font-body text-[24px] font-medium leading-[0.95] tracking-[-0.04em] md:w-[270px] md:text-[34px]"
+        className="w-auto shrink-0 font-body text-[24px] font-medium leading-[0.95] tracking-[-0.04em] md:w-[270px] md:text-[34px]"
       >
         Твой помощник
         <br />в финансах
       </a>
-      <p className="hidden w-[280px] shrink-0 border-l-2 border-primary pl-5 text-[14px] font-normal italic leading-[1.5] text-muted-foreground min-[1360px]:block">
+      <p className="hidden w-[280px] shrink-0 border-l-2 border-primary pl-5 text-[14px] font-normal italic leading-[1.5] text-muted-foreground min-[1600px]:block">
         Все банки для бизнеса на одной странице. Сравни РКО и регистрацию бизнеса ИП/ООО — открой счёт за минуту.
       </p>
-      <nav className="ml-auto hidden items-center gap-6 whitespace-nowrap pl-10 font-head text-[15px] font-black uppercase tracking-[0.02em] md:flex lg:gap-10 xl:pl-16">
+      <nav className="ml-auto hidden items-center gap-6 whitespace-nowrap pl-10 font-head text-[15px] font-black uppercase tracking-[0.02em] xl:flex 2xl:gap-10">
         {links.map((l) => (
           <a key={l.href} href={l.href} className="story-link relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:text-primary hover:after:w-full">
             {l.label}
@@ -34,12 +35,12 @@ const Header = () => {
       <button
         aria-label="Меню"
         onClick={() => setOpen((v) => !v)}
-        className="ml-auto flex h-11 w-11 items-center justify-center border-2 border-border md:hidden"
+        className="ml-auto flex h-11 w-11 items-center justify-center border-2 border-border xl:hidden"
       >
         <Icon name={open ? "X" : "Menu"} size={22} />
       </button>
       {open && (
-        <div className="absolute left-0 right-0 top-full mt-3 animate-fade-in border-y-2 border-border bg-background md:hidden">
+        <div className="absolute left-0 right-0 top-full mt-3 animate-fade-in border-y-2 border-border bg-background xl:hidden">
           {links.map((l) => (
             <a
               key={l.href}
