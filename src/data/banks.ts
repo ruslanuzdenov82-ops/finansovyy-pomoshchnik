@@ -69,6 +69,7 @@ export const banks: Bank[] = [
   {
     id: "vtb",
     name: "ВТБ",
+    href: "https://втб.рф/malyj-biznes/promo/tarif/?utm_source=yandex&utm_medium=cpc&utm_campaign=rko_yxprrko_search_brand_top_msk.704080653&utm_content=ch_yandex_direct%7Ccid_704080653%7Cgid_5662908759%7Cad_17350002916%7Cph_55798161712%7Ccrt_0%7Cpst_premium%7Cps_1%7Csrct_search%7Csrc_none%7Cdevt_desktop%7Cret_55798161712%7Cgeo_213%7Ccf_36484595%7Cint_%7Ctgt_55798161712%7Cadd_no&utm_term=открытие%20рко%20втб&from=utmstart_agtag:1%7Csr:yd%7Ccname:rko_yxprrko_search_brand_top_msk%7Ccid:704080653%7Cadid:17350002916%7C17350002916%7Cdev:desktop%7Cgpid:5662908759%7Ckey:55798161712%7Cmt:%7Cpos:1.premium%7Cst:search.none%7Cregion:213_utmend&etext=2202.VATRZ9TDhT4_aBSYudinjOMJ6D7Em_s3Jjd22v2FfoW6AJargws0bvutqIj-c8WIam1zcGZpdHVkbnF3YXFjeQ.2f5747410df6d72e426da8a0028e8c6a264848e5&yclid=4687954218335076351",
     short: "ВТБ",
     tariff: "Бизнес-старт",
     price: 0,
@@ -165,6 +166,7 @@ export const banks: Bank[] = [
   {
     id: "ozon",
     name: "Озон Банк",
+    href: "https://finance.ozon.ru/business/rko/short?utm_source=ya_perf&utm_medium=cpc&utm_campaign=b2b_rko_062026_search_brand_short_710777462&utm_term=---autotargeting&utm_content=adid_17752807296%7Cctype_type1%7Ccrid_0%7Cdt_desktop%7Cgid_5761019133%7Cpid_205761019133%7Crid_205761019133%7Ccgcid_0%7Cmt_%7Cmk_%7Can_%7Caid_205761019133%7Cpos_1%7Cpost_premium%7Csource_none%7Cstype_search%7Crn_Москва%7Crid_213&etext=2202.Uhfq2PxSWhzqw7xqvRvAKXo6tSS4Imuvof-xkQnp-jAP4qfwRNr0Z_szYfAwyiwDc2FneG10a3FteW1teXBqaQ.8a7077814ace94296a5ae9f26d2c427ce196e271&yclid=13913292743955709951",
     short: "OZ",
     tariff: "Для продавцов",
     price: 0,

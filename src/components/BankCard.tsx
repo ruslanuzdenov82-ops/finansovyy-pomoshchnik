@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Icon from "@/components/ui/icon";
+import OfferButton from "@/components/OfferButton";
 import type { Bank } from "@/data/banks";
 
 type Props = { bank: Bank; index: number };
@@ -77,17 +78,7 @@ const BankCard = ({ bank, index }: Props) => {
         >
           <Icon name={open ? "Minus" : "Plus"} size={20} />
         </button>
-        <a
-          href={bank.href || undefined}
-          role="button"
-          tabIndex={0}
-          target={bank.href ? "_blank" : undefined}
-          rel="noreferrer"
-          className="flex h-[52px] cursor-pointer items-center justify-between bg-primary px-5 text-[17px] font-medium text-primary-foreground transition-all hover:bg-secondary active:translate-y-[2px]"
-        >
-          Оформить
-          <span className="transition-transform group-hover:translate-x-1">→</span>
-        </a>
+        <OfferButton href={bank.href} />
       </div>
     </article>
   );

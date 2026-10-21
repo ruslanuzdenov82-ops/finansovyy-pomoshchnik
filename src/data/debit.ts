@@ -33,7 +33,7 @@ export const debitCards: DebitCard[] = [
       "4 любимые категории каждый месяц с кешбэком до 15%",
       "Круглосуточная поддержка",
     ],
-    href: "",
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=4001&p=adnetwork",
   },
   {
     id: "vtb",
@@ -45,7 +45,20 @@ export const debitCards: DebitCard[] = [
       "Ставка по накопительному счёту до 13,5%",
       "Выпуск и обслуживание бесплатно",
     ],
-    href: "",
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=5006&p=adnetwork",
+  },
+  {
+    id: "vtb-sticker",
+    bank: "ВТБ",
+    title: "Платёжный стикер",
+    logo: "/logos/vtb.png",
+    badge: "Новинка",
+    benefits: [
+      "Оплата покупок в одно касание — без карты и телефона",
+      "Кешбэк рублями как по обычной карте",
+      "Выпуск и обслуживание бесплатно",
+    ],
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=6773&p=adnetwork",
   },
   {
     id: "psb",
@@ -70,7 +83,7 @@ export const debitCards: DebitCard[] = [
       "Ежедневный доход с накопительным счётом",
       "Бесплатные выпуск и обслуживание карты",
     ],
-    href: "",
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=6626&p=adnetwork",
   },
   {
     id: "ozon",
@@ -83,7 +96,7 @@ export const debitCards: DebitCard[] = [
       "Бесплатный выпуск и обслуживание",
       "Процент на остаток по счёту",
     ],
-    href: "",
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=7260&p=adnetwork",
   },
   {
     id: "mts",
@@ -95,7 +108,7 @@ export const debitCards: DebitCard[] = [
       "Бонусы и скидки у партнёров экосистемы МТС",
       "Бесплатное обслуживание карты",
     ],
-    href: "",
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=6766&p=adnetwork",
   },
   {
     id: "ubrr",
@@ -107,7 +120,7 @@ export const debitCards: DebitCard[] = [
       "Бесплатное обслуживание карты",
       "Процент на остаток с накопительным счётом",
     ],
-    href: "",
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=7481&p=adnetwork",
   },
   {
     id: "renessans",
@@ -119,7 +132,7 @@ export const debitCards: DebitCard[] = [
       "Доход на остаток по накопительному счёту",
       "Бесплатный выпуск карты",
     ],
-    href: "",
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=7486&p=adnetwork",
   },
   {
     id: "akbars",
@@ -131,7 +144,7 @@ export const debitCards: DebitCard[] = [
       "Бесплатное обслуживание карты",
       "Переводы по СБП без комиссии",
     ],
-    href: "",
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=6335&p=adnetwork",
   },
   {
     id: "fora",
@@ -143,6 +156,6 @@ export const debitCards: DebitCard[] = [
       "Кешбэк за покупки",
       "Бесплатные переводы по СБП",
     ],
-    href: "",
+    href: "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=6236&p=adnetwork",
   },
 ];

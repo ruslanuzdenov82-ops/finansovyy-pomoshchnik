@@ -20,7 +20,7 @@ export const mfoOffers: MfoOffer[] = [
       "Деньги за 15 минут",
       "Без справок о доходах"
     ],
-    "href": "https://agents.finuslugi.ru/go?erid=2W5zFGmByLd&subid1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=7073&p=adnetwork",
     "legalName": "ПАО МКК «Займер»",
     "ogrn": "1235400049356",
     "inn": "5406836941",
@@ -35,7 +35,7 @@ export const mfoOffers: MfoOffer[] = [
       "Одобрение 24/7",
       "Продление онлайн"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1698&subId1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=4821&p=adnetwork",
     "legalName": "ООО МКК «Срочноденьги»",
     "ogrn": "1105260001857",
     "inn": "5260271530",
@@ -50,7 +50,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://t.fincpanetwork.ru/click/35715/77?erid=LjN8JwPDS&sub1=monefy",
+    "href": "",
     "legalName": "ООО МКК «ВЭББАНКИР»",
     "ogrn": "1247700626370",
     "inn": "7736364137",
@@ -65,7 +65,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1563&subId1=monefy",
+    "href": "",
     "legalName": "ООО МФК «Джой Мани»",
     "ogrn": "1145476064711",
     "inn": "5407496776",
@@ -80,7 +80,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1689&subId1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=5024&p=adnetwork",
     "legalName": "ООО МФК «Мани Мен»",
     "ogrn": "1117746442670",
     "inn": "7704784072",
@@ -110,7 +110,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://t.fincpanetwork.ru/click/35715/188?erid=2W5zFJBxEwS&sub1=monefy",
+    "href": "",
     "legalName": "ООО МКК «ЦФГ»",
     "ogrn": "1132932001674",
     "inn": "2902076410",
@@ -118,14 +118,14 @@ export const mfoOffers: MfoOffer[] = [
   },
   {
     "id": "a-dengi",
-    "name": "А-деньги",
-    "logo": "/mfo/a-dengi.svg",
+    "name": "Альфа Деньги",
+    "logo": "/logos/alfa.png",
     "benefits": [
       "Деньги за несколько минут",
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://go.leadgid.ru/aff_c?aff_id=154281&offer_id=6362&p=11411&erid=2W5zFHq5MGm&aff_sub=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=6362&p=adnetwork",
     "legalName": "ООО МКК «А ДЕНЬГИ»",
     "ogrn": "1217700636944",
     "inn": "7708400979",
@@ -140,7 +140,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://t.fincpanetwork.ru/click/35715/81?erid=2W5zFHez9Cm&sub1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=4412&p=adnetwork",
     "legalName": "ООО МКК «Займ Онлайн»",
     "ogrn": "1127746428171",
     "inn": "7703769314",
@@ -155,7 +155,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://go.leadgid.ru/aff_c?aff_id=154281&offer_id=5562&p=11411&erid=2W5zFJaGS32&aff_sub=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=5562&p=adnetwork",
     "legalName": "ООО МКК «УМНЫЙ ЗАЙМ»",
     "ogrn": "1247800001756",
     "inn": "7802948882",
@@ -170,7 +170,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1559&subId1=monefy",
+    "href": "",
     "legalName": "ООО МКК «Свои Деньги»",
     "ogrn": "1247700487121",
     "inn": "9715488417",
@@ -185,7 +185,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://go.leadgid.ru/aff_c?aff_id=154281&offer_id=5316&p=11411&erid=2W5zFK38Z1B&aff_sub=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=5316&p=adnetwork",
     "legalName": "ООО МКК «М-ДЕНЬГИ»",
     "ogrn": "1237700493216",
     "inn": "9703151232",
@@ -200,7 +200,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://t.fincpanetwork.ru/click/35715/445?erid=2W5zFHxUXcu&sub1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=4029&p=adnetwork",
     "legalName": "ООО МКК «Фастмани.ру»",
     "ogrn": "1177847323741",
     "inn": "7805714988",
@@ -215,7 +215,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1558&subId1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=4464&p=adnetwork",
     "legalName": "ООО МКК Быстроденьги",
     "ogrn": "1257300005863",
     "inn": "7300044749",
@@ -230,7 +230,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1640&subId1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=1890&p=adnetwork",
     "legalName": "ООО МФК «МигКредит»",
     "ogrn": "1107746671207",
     "inn": "7715825027",
@@ -245,7 +245,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1579&subId1=monefy",
+    "href": "",
     "legalName": "ООО МКК «Экофинанс»",
     "ogrn": "1157746230730",
     "inn": "7715450868",
@@ -260,7 +260,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://t.fincpanetwork.ru/click/35715/405?erid=2Vtzqw29t3A&sub1=monefy",
+    "href": "",
     "legalName": "ООО МКК «Займ Бюро»",
     "ogrn": "1257700562492",
     "inn": "7716256567",
@@ -275,7 +275,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://go.leadgid.ru/aff_c?aff_id=154281&offer_id=4970&p=11411&erid=LjN8KGYxp&aff_sub=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=4970&p=adnetwork",
     "legalName": "ООО МКК «Бриз»",
     "ogrn": "1185476002117",
     "inn": "5404070027",
@@ -290,7 +290,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://go.leadgid.ru/aff_c?aff_id=154281&offer_id=6686&p=11411&erid=2W5zFGrnTkd&aff_sub=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=6686&p=adnetwork",
     "legalName": "ООО «Финтех-Маркет»",
     "ogrn": "",
     "inn": "6317164496",
@@ -305,7 +305,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1474&subId1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=4759&p=adnetwork",
     "legalName": "ООО «МКК НФ»",
     "ogrn": "1166196099057",
     "inn": "6162073437",
@@ -320,7 +320,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1682&subId1=monefy",
+    "href": "",
     "legalName": "ООО «Финтех-Маркет»",
     "ogrn": "1236300023849",
     "inn": "6317164496",
@@ -335,7 +335,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://t.fincpanetwork.ru/click/35715/865?erid=2W5zFJkaZcV&sub1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=6467&p=adnetwork",
     "legalName": "ООО МКК «АДЕЛАИДА»",
     "ogrn": "1237800087040",
     "inn": "7838115690",
@@ -350,7 +350,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1690&subId1=monefy",
+    "href": "",
     "legalName": "ООО МКК «Лайк Мани»",
     "ogrn": "1255200003552",
     "inn": "5262398074",
@@ -365,7 +365,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1683&subId1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=6032&p=adnetwork",
     "legalName": "АО «МКК УФ»",
     "ogrn": "1236100023433",
     "inn": "6162089317",
@@ -380,7 +380,7 @@ export const mfoOffers: MfoOffer[] = [
       "Первый заём бесплатно!",
       "Досрочное погашение без комиссий"
     ],
-    "href": "https://links.inssmart.ru/offers?subId=8vs516q9iz&offerId=1521&subId1=monefy",
+    "href": "https://go.leadgid.ru/aff_c?aff_id=155564&offer_id=4813&p=adnetwork",
     "legalName": "АО МФК \"Саммит\"",
     "ogrn": "1257700155360",
     "inn": "9714073258",

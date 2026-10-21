@@ -1,12 +1,10 @@
 import Icon from "@/components/ui/icon";
+import OfferButton from "@/components/OfferButton";
 import type { DebitCard } from "@/data/debit";
 
 type Props = { card: DebitCard; index: number };
 
 const DebitCardItem = ({ card, index }: Props) => {
-  const btnClass =
-    "mt-auto flex h-[52px] items-center justify-between bg-primary px-5 text-[17px] font-medium text-primary-foreground transition-all hover:bg-secondary active:translate-y-[2px]";
-
   return (
     <article
       className="group relative flex animate-fade-in flex-col border-2 border-border bg-card p-6 transition-colors hover:bg-muted"
@@ -40,17 +38,7 @@ const DebitCardItem = ({ card, index }: Props) => {
         ))}
       </ul>
 
-      {card.href ? (
-        <a href={card.href} target="_blank" rel="noopener noreferrer sponsored" className={btnClass}>
-          Оформить
-          <span className="transition-transform group-hover:translate-x-1">→</span>
-        </a>
-      ) : (
-        <button type="button" className={btnClass}>
-          Оформить
-          <span className="transition-transform group-hover:translate-x-1">→</span>
-        </button>
-      )}
+      <OfferButton href={card.href} className="mt-auto" />
     </article>
   );
 };
