@@ -14,7 +14,6 @@ const steps = [
 
 const Registration = () => {
   useEffect(() => {
-    document.title = "Регистрация ИП и ООО бесплатно — Твой помощник в финансах";
     window.scrollTo(0, 0);
   }, []);
 

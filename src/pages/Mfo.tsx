@@ -13,7 +13,6 @@ const facts = [
 
 const Mfo = () => {
   useEffect(() => {
-    document.title = "Займы в МФО онлайн — Твой помощник в финансах";
     window.scrollTo(0, 0);
   }, []);
 

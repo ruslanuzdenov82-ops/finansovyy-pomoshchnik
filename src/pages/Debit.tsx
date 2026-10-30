@@ -13,7 +13,6 @@ const facts = [
 
 const Debit = () => {
   useEffect(() => {
-    document.title = "Дебетовые карты с кешбэком — Твой помощник в финансах";
     window.scrollTo(0, 0);
   }, []);
 

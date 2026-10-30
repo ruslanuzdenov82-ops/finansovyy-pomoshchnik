@@ -22,7 +22,6 @@ const contacts = [
 
 const Contacts = () => {
   useEffect(() => {
-    document.title = "Контакты — Твой помощник в финансах";
     window.scrollTo(0, 0);
   }, []);
 
